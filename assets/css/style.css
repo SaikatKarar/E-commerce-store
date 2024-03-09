@@ -326,10 +326,11 @@ form {
 
 .first>div {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   justify-items: center;
   gap: 10px;
+  overflow: auto;
 }
 
 .first img {
@@ -884,9 +885,9 @@ footer>hr {
     margin: 15px;
   }
 
-  .first {
-    overflow: hidden;
-  }
+  /* .first {
+    overflow: auto;
+  } */
 
   .trending-container {
     margin: 14px;
