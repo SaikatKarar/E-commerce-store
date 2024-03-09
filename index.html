@@ -4,11 +4,428 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLACKWHITE: E-store</title>
+    <link rel="icon" sizes="any" mask="" href="assets/images/black-icon.png">
+    <title>BLACK & WHITE E-STORE</title>
+    <!-- 
+        - custom CSS link
+     -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+        - Icon
+     -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
 </head>
 
 <body>
+    <!-- 
+        - #PRELOADER
+     -->
+    <div class="preloader" data-preloader>
+        <div class="preloader-inner">
+            <img src="./assets/images/loding.gif" width="500" height="500" alt="" class="img">
+        </div>
+    </div>
 
+    <!-- 
+        - #HEADER
+     -->
+    <header class="header">
+        <div class="header-Left">
+            <a href="./index.html" class="logo-container">
+                <img src="./assets/images/white-icon1.png" width="60" height="60" />
+            </a>
+
+            <!--seach box-->
+            <div class="search-Input-Container">
+                <div class="searchIcon">
+                    <i class="ri-search-line"></i>
+                </div>
+                <form action="" id="inputForm">
+                    <input type="text" placeholder="Search for products, brands and more" class="inputSearch" />
+                </form>
+                <div class="inputCloseSearch">
+                    <i class="fa-solid fa-xmark" id="closeSearch"></i>
+                </div>
+
+                <div class="searchRecentModal">
+                    <!-- <h3>Recent Searches</h3> -->
+                    <div class="listofRecent">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="download-container">
+                <div class="mobileIcon">
+                    <!-- <img src="./assets/images/mobile.png" /> -->
+                    <i class="ri-google-play-line"></i>
+                </div>
+                <p>Download App</p>
+
+                <div class="download-HoverBtn-Container">
+                    <h3>Download From</h3>
+
+                    <a href="" class="download-Btn">
+                        <img src="./assets/images/playstore-icon-big.webp" />
+                    </a>
+                    <a href="" class="download-Btn">
+                        <img src="./assets/images/appstore-icon-big.webp" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="becomeSupplierContainer">
+                <p>Become a Seller</p>
+            </div>
+
+            <div class="select-country">
+                <div class="select-country-btn">
+                    <img src="./assets/images/ind.png" width="20" height="20" alt="">
+                    <span class="country-btn-text">EN</span>
+                    <i class="ri-arrow-drop-down-line"></i>
+                </div>
+            </div>
+
+            <div class="login-And-Cart">
+                <a href="./login.html" class="login-container">
+                    <div class="profile-icon">
+                        <i class="ri-account-circle-line"></i>
+                    </div>
+                    <p>Login</p>
+                </a>
+
+                <a href="./cart.html" class="cart-container">
+                    <div class="cart-icon">
+                        <img src="./assets/images/shopping-bag-line.svg" />
+                    </div>
+                    <p>Cart</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <i class="ri-menu-3-line"></i>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li>Grocery</li>
+            <li>Mobiles</li>
+            <li>Fashion</li>
+            <li>Home & Decor</li>
+            <li>Electronics</li>
+            <li>Beauty</li>
+            <li>More</li>
+        </ul>
+    </nav>
+    <!-- 
+        - #HERO-SECTION
+     -->
+    <section class="hero-section" id="firstsec">
+        <div class="left-section">
+            <video autoplay muted loop>
+                <source src="./assets/Untitled-design.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="right-section">
+            <div class="first">
+                <p>Today's popular picks</p>
+                <div>
+                    <div>
+                        <img src="./assets/images/k2-1.webp" alt="">
+                        <p>Grocery</p>
+                    </div>
+
+                    <div>
+                        <img src="./assets/images/k2-2.webp" alt="">
+                        <p>Grocery</p>
+                    </div>
+
+                    <div>
+                        <img src="./assets/images/k2-3.webp" alt="">
+                        <p>Grocery</p>
+                    </div>
+
+                    <div>
+                        <img src="./assets/images/k2-4.webp" alt="">
+                        <p>Grocery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <div>
+                    <p>
+                        <span>Outlet</span>
+                        <span>Deals</span>
+                    </p>
+                    <p>
+                        <span>Clearance</span>
+                        <span>, open-box and more</span>
+                        <span>.</span>
+                    </p>
+                    <p>View outlet deals</p>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div class="last-section"></div>
+    </section>
+
+    <!--
+      - #TRENDING SECTION
+    -->
+    <section class="trending-section">
+        <p class="title">Trending now </p>
+
+        <div class="trending-container">
+            <div><img src="./assets/images/trend1.jpg" height="150" width="200">
+                <p>Lenovo - Ideapad 1 15.6 FHD Touch-Screen Laptop - Ryzen 7...</p>
+            </div>
+            <div><img src="./assets/images/laptop-1.webp" height="150" width="200">
+                <p>Acer Swift Go 14 AI Powered EVO Intel Core Ultra 5 125H - (16 GB/512 GB SSD/Windows 11 Home)
+                    SFG14-72T...</p>
+            </div>
+            <div><img src="./assets/images/air-cooler.webp" height="150" width="100">
+                <p>BAJAJ 24 L Room/Personal Air Cooler</p>
+            </div>
+            <div><img src="./assets/images/sony.webp" height="150" width="100">
+                <p>Sony - WH-1000XM5 Wireless Noise-Canceling Over-the-Ear...</p>
+            </div>
+            <div>
+                <img src="./assets/images/instax-instant-camera-mini-11-fujifilm-original.webp" height="150"
+                    width="200">
+                <p>FUJIFILM Instax Mini 11 Instant Camera (Purple)</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--
+      - #OFFER-SEC
+    -->
+    <section class="offer-sec">
+        <div class="offer-sec1">
+            <div>
+                <p>Save up to $500</p>
+                <p>on select Windows laptops.</p>
+                <p>Minimum savings is $30.</p>
+                <button>Shop Now</button>
+            </div>
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/subghp-MMT-555591-windows-fcc6f1ef-675e-463d-bee8-64bd19088fbb.jpg"
+                alt="">
+        </div>
+        <div class="offer-sec2">
+            <div>
+                <p>Smart TVs</p>
+                <p>as low as $109.99.</p>
+                <button>Shop Now</button>
+            </div>
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/subghp-MMT-555591-tv-4ef8f148-989d-4846-ae5c-65854b349e5b.jpg"
+                alt="">
+        </div>
+    </section>
+
+    <!--
+      - #FEATURED-SEC
+    -->
+    <section class="featured-sec">
+        <p>Our featured offers</p>
+        <div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-549829_pol_COPE_DER-fa200b0f-0f59-4944-84ce-13f51119db12.jpg;maxHeight=504;maxWidth=740">
+                <p>Apple Watch Save up to $70 on select models.</p>
+                <p>Give Dad the gift of Apple Watch.</p>
+                <p>Minimum savings is $30. Excludes open-box and refurbished items.</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_MMT-549800_der-b2458fef-e15a-4f61-87e6-66976b17ba3a.jpg;maxHeight=504;maxWidth=740">
+                <p>Appliance Summer Savings Event..</p>
+                <p>Bring summer home with new appliances for your kitchen and laundry room.</p>
+                <p></p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_microsoft-happy-guy-v2-0620-3a7b8bc1-22dd-4fc9-8cf6-905382572981.jpg;maxHeight=504;maxWidth=740">
+                <p>Introducing Surface Laptop Go 2.</p>
+                <p>Sleek, light, on the go performance.</p>
+                <p></p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-traeger-mmt549810-5ca17726-f4bd-490f-9b37-99065dacf67f.jpg;maxHeight=504;maxWidth=740">
+                <p>Save up to $150 on select Traeger grills.</p>
+                <p>Experience the flavor of wood pellet grilling this summer.</p>
+                <p>Minimum savings is $75.</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-549477_pol_COPE_DER-bb7580c0-afa1-4b6b-9775-d78aa1be89e3.jpg;maxHeight=504;maxWidth=740">
+                <p>Save up to $100 on select wearables.</p>
+                <p>Keep your goals on track with smartwatches and fitness trackers from Fitbit, Garmin and Citizen.</p>
+                <p>Minimum savings is $20.</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-552676-220606_DER-b3ba4051-f64a-439b-88f2-99e7308c0c6a.jpg;maxHeight=504;maxWidth=740">
+                <p>Save up to $100 on select GoPro.</p>
+                <p>Plus, get a free $25 Best Buy e-Gift Card with GoPro HERO10 Black action camera.</p>
+                <p>Minimum savings is $50. Terms and conditions apply to gift card offer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--
+      - #VIEW-SEC
+    -->
+    <section class="view-sec">
+        <p><span> Related to items you've viewed</span>
+            <span>(6 items)</span>
+        </p>
+
+        <div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6418/6418601_sd.jpg;maxHeight=272;maxWidth=400">
+                <p>MacBook Pro 13.3 Laptop - Apple M1 chip - 8GB Memory - 256GB SSD - Space Gray</p>
+                <p>$1,199.99</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4900/4900944_sd.jpg;maxHeight=272;maxWidth=400">
+                <p>Apple - AirPods (3rd generation) - White</p>
+                <p>$169.00</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6487/6487448_sd.jpg;maxHeight=272;maxWidth=400">
+                <p>Apple - iPhone 13 Pro Max 5G 256GB - Alpine Green (T-Mobile)</p>
+                <p>$46.66/mo</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394628_sd.jpg;maxHeight=272;maxWidth=400">
+                <p>Apple - Geek Squad Certified Refurbished AirPods Pro - White</p>
+                <p>$149.99</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4900/4900942_sd.jpg;maxHeight=272;maxWidth=400">
+                <p>Apple - AirPods Pro (with Magsafe Charging Case) - White</p>
+                <p>$179.99</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401735_sd.jpg;maxHeight=272;maxWidth=400">
+                <p>Samsung - 55 Class 7 Series LED 4K UHD Smart Tizen TV</p>
+                <p>$399.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!--
+      - #SUGGEST 
+    -->
+    <section class="suggest-section">
+        <p><span> You may also like</span>
+            <span>(6 items)</span>
+        </p>
+        <div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6489/6489522_sd.jpg;maxHeight=272;maxWidth=400">
+                <p>Apple - Geek Squad Certified Refurbished AirPods (3rd generation) - White</p>
+                <p>$107.49</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397391_rd.jpg;maxHeight=272;maxWidth=400">
+                <p>Beats by Dr. Dre - Beats Fit Pro True Wireless Noise Cancelling In-Ear Earbuds - Black</p>
+                <p>$179.99</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4900/4900915_sd.jpg;maxHeight=272;maxWidth=400">
+                <p>Beats by Dr. Dre - Beats Studio Buds Totally Wireless Noise Cancelling Earbuds - Black</p>
+                <p>$119.99</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6419/6419203_sd.jpg;maxHeight=272;maxWidth=400">
+                <p>Bose - QuietComfort Earbuds True Wireless Noise Cancelling In-Ear Earbuds - Triple Black</p>
+                <p>$199.00</p>
+            </div>
+            <div><img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5920/5920901_rd.jpg;maxHeight=272;maxWidth=400">
+                <p>Beats by Dr. Dre - Beats Studio³ Wireless Noise Cancelling Headphones - Matte Black</p>
+                <p>$199.99</p>
+            </div>
+            <div><img src="./assets/images/original-imagx.webp">
+                <p>Beats by Dr. Dre - Powerbeats Pro Totally Wireless Earbuds - Black</p>
+                <p>$199.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!--
+      - FOOTER
+    -->
+    <footer>
+        <div class="footer1">
+            <div class="left-Side">
+                <div>
+                    <div class="footer-Title">ABOUT</div>
+                    <ul>
+                        <li>Contact Us</li>
+                        <li>About Us</li>
+                        <li>Careers</li>
+                        <li>Black & White Stories</li>
+                        <li>Press</li>
+                        <li>Black & White Wholesale</li>
+                        <li>Corporate Information</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-Title">HELP</div>
+                    <ul>
+                        <li>Payments</li>
+                        <li>Shipping</li>
+                        <li>Cancellation & Returns</li>
+                        <li>FAQ</li>
+                        <li>Report Infringement</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-Title">POLICY</div>
+                    <ul>
+                        <li>Return Policy</li>
+                        <li>Terms Of Use</li>
+                        <li>Security</li>
+                        <li>Privacy</li>
+                        <li>Sitemap</li>
+                        <li>EPR Compilance</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-Title">SOCIAL</div>
+                    <ul>
+                        <li>SOCIAL</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-Side">
+                <div>
+                    <div class="footer-Title2">Mail Us:</div>
+                    <span>Black & White Limited, Buildings Alyssa, Begonia & <br> Clove Embassy Tech Village, Outer Ring
+                        Road, Devarabeesanahalli Village, Bengaluru, <br> 560103, Karnataka, India</span>
+                </div>
+                <div>
+                    <div class="footer-Title2">Registered Office Address:</div>
+                    <span> Black & White Internet Private Limited, Buildings Alyssa, Begonia & Clove Embassy Tech
+                        Village,
+                        Bengaluru, 560103, <br> Karnataka, India</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 
+        - custom js link
+     -->
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

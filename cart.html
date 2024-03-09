@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK & WHITE E-STORE</title>
+
+    <!-- 
+        - custom CSS link
+     -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+
+    <!-- 
+          - Icon
+       -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 
+        - #PRELOADER
+     -->
+    <div class="preloader" data-preloader>
+        <div class="preloader-inner">
+            <img src="./assets/images/loding.gif" width="500" height="500" alt="" class="img">
+        </div>
+    </div>
+
+    <!-- 
+        - #HEADER
+     -->
+    <header class="header">
+        <div class="header-Left">
+            <a href="./index.html" class="logo-container">
+                <img src="./assets/images/white-icon1.png" width="60" height="60" />
+            </a>
+
+            <!--seach box-->
+            <div class="search-Input-Container">
+                <div class="searchIcon">
+                    <i class="ri-search-line"></i>
+                </div>
+                <form action="" id="inputForm">
+                    <input type="text" placeholder="Search for products, brands and more" class="inputSearch" />
+                </form>
+                <div class="inputCloseSearch">
+                    <i class="fa-solid fa-xmark" id="closeSearch"></i>
+                </div>
+
+                <div class="searchRecentModal">
+                    <!-- <h3>Recent Searches</h3> -->
+                    <div class="listofRecent">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="download-container">
+                <div class="mobileIcon">
+                    <!-- <img src="./assets/images/mobile.png" /> -->
+                    <i class="ri-google-play-line"></i>
+                </div>
+                <p>Download App</p>
+
+                <div class="download-HoverBtn-Container">
+                    <h3>Download From</h3>
+
+                    <a href="" class="download-Btn">
+                        <img src="./assets/images/playstore-icon-big.webp" />
+                    </a>
+                    <a href="" class="download-Btn">
+                        <img src="./assets/images/appstore-icon-big.webp" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="becomeSupplierContainer">
+                <p>Become a Seller</p>
+            </div>
+
+            <div class="select-country">
+                <div class="select-country-btn">
+                    <img src="./assets/images/ind.png" width="20" height="20" alt="">
+                    <span class="country-btn-text">EN</span>
+                    <i class="ri-arrow-drop-down-line"></i>
+                </div>
+            </div>
+
+            <div class="login-And-Cart">
+                <a href="./login.html" class="login-container">
+                    <div class="profile-icon">
+                        <i class="ri-account-circle-line"></i>
+                    </div>
+                    <p>Login</p>
+                </a>
+
+                <a href="./cart.html" class="cart-container">
+                    <div class="cart-icon">
+                        <img src="./assets/images/shopping-bag-line.svg" />
+                    </div>
+                    <p>Cart</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <i class="ri-menu-3-line"></i>
+        </div>
+    </header>
+
+    <!-- 
+        - #
+     -->
+    <div id="container">
+        <div id="left">
+            <div class="first-title">
+                <h3>Your shopping cart</h3>
+            </div>
+
+            <div id="le">
+                <img src="./assets/images/loding.gif" width="400" height="350" alt="" class="img">
+            </div>
+        </div>
+        <div id="right">
+            <div class="coupon">
+                <div>
+                    <p>Have coupon?</p>
+                </div>
+                <div>
+                    <div class="coupon__section">
+
+                        <div class="input-field">
+                            <input type="text" placeholder="Coupon code" />
+                        </div>
+                        <div class="apply-btn">
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-details">
+                <div>
+                    <div>
+                        <p>Total price:</p>
+                        <p>₹ 00.00</p>
+                    </div>
+                    <div>
+                        <p>Discount:</p>
+                        <p>-₹ 00.00</p>
+                    </div>
+                    <div>
+                        <p>TAX:</p>
+                        <p>₹ 00.00</p>
+                    </div>
+                    <div>
+                        <p>Delivery Charges:</p>
+                        <p>Free</p>
+                    </div>
+
+                    <h4>You will Save ₹0 on this order</h4>
+                </div>
+                <hr />
+                <div>
+                    <h3>Total Amount</h3>
+                    <p>₹ 0</p>
+                </div>
+                <div class="btn">
+                    <button> Make Purchase </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 
+        - custom js link
+     -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+.body {
+    margin: 70px auto 0px;
+    width: 380px;
+    padding-top: 35px;
+    padding-bottom: 24px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* *************** */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.advertisers {
+    /* background-color: rgb(255, 255, 255); */
+    margin-bottom: -4px;
+}
+
+.advertisers>img {
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.profile__section {
+    background-color: rgb(255, 255, 255);
+    padding: 40px 30px 0px;
+    border: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.login__title>h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+}
+
+.phone__section {
+    display: flex;
+    align-items: end;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(223, 223, 223);
+}
+
+.country {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid rgb(223, 223, 223);
+    padding: 10px;
+}
+
+.country_name {
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    padding-bottom: 7px
+}
+
+.country_code {
+    font-size: 15px;
+    font-weight: 600;
+    /* margin-bottom: 5px; */
+}
+
+/* Phone no Pop Up  */
+.input-field {
+    position: relative;
+    /* margin-left: 20px; */
+}
+
+.input-field>input {
+    font-size: 15px;
+    display: inline-block;
+    border: none;
+    /* border: 1px solid #e0e0e0; */
+    color: #444;
+    padding: 10px;
+    /* padding-left: 62px; */
+    font-weight: 500;
+}
+
+.input-field>input:focus {
+    outline: none;
+    /* border-bottom: 1px solid #F43397; */
+}
+
+.input-field>label {
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+    left: 12px;
+    top: 10px;
+    transition: 0.2s;
+}
+
+.input-field>input:focus~label,
+.input-field>input:valid~label {
+    top: -8px;
+    left: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    /* color: #F43397; */
+}
+
+.midLinks {
+    padding-top: 12px;
+    font-size: 12px;
+    color: #999;
+}
+
+.midLinks>a {
+    color: #444;
+}
+
+
+.otp__btn {
+    margin: 12px 0px 15px;
+    box-sizing: border-box;
+}
+
+.otp__btn>button {
+    width: 100%;
+    padding: 12px;
+    background-color: #444;
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+}
+
+.terms {
+    margin-top: 42px;
+}
+
+.terms>p {
+    font-size: 12px;
+    padding: 20px 0 50px;
+    /* text-align: center; */
+    font-weight: 500;
+    color: rgb(153, 153, 153);
+}
+
+.terms>p>span {
+    color: #444;
+    cursor: pointer;
+}
