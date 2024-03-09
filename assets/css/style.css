@@ -439,12 +439,14 @@ form {
 
 .trending-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 240px);
   gap: 20px;
   width: 98%;
   margin: auto;
   margin-bottom: 28px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  overflow: auto;
+  /* white-space: nowrap; */
 }
 
 .trending-container>div {
@@ -520,7 +522,7 @@ form {
 }
 
 .offer-sec1>div>button {
-  margin-top: 5px;
+  margin-top: 12px;
   padding: 8px 20px;
   font-family: 'Raleway', sans-serif;
   color: white;
@@ -564,7 +566,7 @@ form {
 }
 
 .offer-sec2>div>button {
-  margin-top: 5px;
+  margin-top: 12px;
   padding: 8px 20px;
   font-family: 'Raleway', sans-serif;
   color: white;
@@ -607,6 +609,7 @@ form {
 }
 
 .featured-sec>div>div>img {
+  max-width: 100%;
   height: 250px;
   cursor: pointer;
 }
@@ -887,7 +890,7 @@ footer>hr {
 
   .trending-container {
     margin: 14px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   .offer-sec {
@@ -931,8 +934,16 @@ footer>hr {
     display: none;
   }
 
+  .second>div:first-child>p:first-child {
+    margin-left: 17px;
+  }
+
   .last-section {
     width: 96%;
+  }
+
+  .trending-container {
+    grid-template-columns: repeat(5, 212px);
   }
 
   /*-----------------------------------*\
@@ -969,6 +980,10 @@ footer>hr {
     margin-left: 11px;
   }
 
+  .second>div:first-child>p:first-child {
+    margin-left: 14px;
+  }
+
   .hero-section {
     margin: 6px;
   }
@@ -1000,6 +1015,10 @@ footer>hr {
  */
 
 @media (max-width: 468px) {
+  .second>div:first-child>p:first-child {
+    margin-left: 8px;
+  }
+
   .search-Input-Container {
     /* width: 156px; */
     display: none;
@@ -1007,5 +1026,31 @@ footer>hr {
 
   .last-section {
     width: 93%;
+  }
+
+  .offer-sec1>div {
+    top: 22px;
+    left: 28px;
+  }
+
+  .offer-sec2>div {
+    top: 22px;
+    left: 28px;
+  }
+
+  .offer-sec1>div>p:first-child {
+    font-size: 32px;
+  }
+
+  .offer-sec2>div>p:first-child {
+    font-size: 32px;
+  }
+
+  .offer-sec1>div>button {
+    padding: 8px;
+  }
+
+  .offer-sec2>div>button {
+    padding: 8px;
   }
 }
