@@ -444,6 +444,7 @@ form {
   width: 98%;
   margin: auto;
   margin-bottom: 28px;
+  overflow-x: hidden;
 }
 
 .trending-container>div {
