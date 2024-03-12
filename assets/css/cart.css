@@ -1,7 +1,7 @@
 #container {
     display: flex;
     width: 80%;
-    margin: 80px auto 0px auto;
+    margin: 42px auto 0px auto;
     gap: 30px;
     /* background-color: #fbfbfb; */
 }
@@ -11,6 +11,7 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 20px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     border-radius: 6px;
     background-color: #ffffff;
+    margin-bottom: 42px;
 }
 
 .first-header {
@@ -66,6 +67,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    float: left;
 }
 
 .btn {
@@ -151,8 +153,7 @@
     border-radius: 6px;
 }
 
-#right>div>h3,
-h4 {
+#right>div>h3 {
     margin-left: 27px;
 }
 
@@ -260,6 +261,7 @@ h4 {
 
     #left {
         width: 100%;
+        margin-bottom: 12px;
     }
 
     #right {

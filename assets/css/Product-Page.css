@@ -159,17 +159,18 @@ main>p>span {
     margin-bottom: 25px;
 }
 
-.add-to-cart-btn>div:nth-child(1) {
+.add-to-cart-btn>a:nth-child(1) {
     width: 90%;
     text-align: center;
     /* border: none; */
 }
 
-.add-to-cart-btn>div>button {
+.add-to-cart-btn>a>button {
     border: none;
     font-size: 16px;
     padding-block: 18px;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .add-to-cart-btn>div:nth-child(2) {
