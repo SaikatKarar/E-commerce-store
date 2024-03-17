@@ -16,6 +16,12 @@
      -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 
+    <!-- 
+        - Using Swiper from CSS CDN
+     -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -155,37 +161,70 @@
         <div class="right-section">
             <div class="first">
                 <p>Today's popular picks</p>
-                <div>
-                    <a href="./product-list.html">
-                        <img src="./assets/images/k2-1.webp" alt="">
-                        <p>Grocery</p>
-                    </a>
 
-                    <a href="./product-list.html">
-                        <img src="./assets/images/k2-2.webp" alt="">
-                        <p>Grocery</p>
-                    </a>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="./product-list.html">
+                                <img src="./assets/images/k2-1.webp" alt="">
+                                <p>Grocery</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="./product-list.html">
+                                <img src="./assets/images/k2-2.webp" alt="">
+                                <p>Grocery</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="./product-list.html">
+                                <img src="./assets/images/k2-3.webp" alt="">
+                                <p>Grocery</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="./product-list.html">
+                                <img src="./assets/images/k2-4.webp" alt="">
+                                <p>Grocery</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="./product-list.html">
+                                <img src="./assets/images/k2-5.webp" alt="">
+                                <p>Grocery</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="./product-list.html">
+                                <img src="./assets/images/k2-6.webp" alt="">
+                                <p>Grocery</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="./product-list.html">
+                                <img src="./assets/images/k2-3.webp" alt="">
+                                <p>Grocery</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="./product-list.html">
+                                <img src="./assets/images/k2-5.webp" alt="">
+                                <p>Grocery</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="./product-list.html">
+                                <img src="./assets/images/k2-3.webp" alt="">
+                                <p>Grocery</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
 
-                    <a href="./product-list.html">
-                        <img src="./assets/images/k2-3.webp" alt="">
-                        <p>Grocery</p>
-                    </a>
-
-                    <a href="./product-list.html">
-                        <img src="./assets/images/k2-4.webp" alt="">
-                        <p>Grocery</p>
-                    </a>
-
-                    <a href="./product-list.html">
-                        <img src="./assets/images/k2-5.webp" alt="">
-                        <p>Grocery</p>
-                    </a>
-
-                    <a href="./product-list.html">
-                        <img src="./assets/images/k2-6.webp" alt="">
-                        <p>Grocery</p>
-                    </a>
+                    <div class="swiper-pagination"></div>
                 </div>
+
             </div>
             <div class="second">
                 <div>
@@ -454,6 +493,27 @@
         - custom js link
      -->
     <script src="./assets/js/script.js"></script>
+
+    <!-- 
+        - Using Swiper from JS CDN
+     -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

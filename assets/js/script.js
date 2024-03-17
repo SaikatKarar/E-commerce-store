@@ -18,3 +18,22 @@ function showSidebar() {
 function closeSidebar() {
     sidebar.style.right = '-150%';
 }
+
+
+
+// function swiperAnimation() {
+//     let swiper = new Swiper(".mySwiper", {
+//         slidesPerView: "auto",
+//         spaceBetween: 30,
+//         loop: true,
+//         pagination: {
+//             el: ".swiper-pagination",
+//             clickable: true,
+//         },
+//         navigation: {
+//             nextEl: ".swiper-button-next",
+//             prevEl: ".swiper-button-prev",
+//         },
+//     });
+// }
+// swiperAnimation()

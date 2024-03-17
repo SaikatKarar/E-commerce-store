@@ -293,7 +293,7 @@ form {
   height: 100vh;
   width: 400px;
   padding: 24px;
-  z-index: 1;
+  z-index: 999;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
   transition: 0.75s ease-out;
 }
@@ -317,7 +317,7 @@ form {
 
 .hero-section {
   width: 100%;
-  height: fit-content;
+  /* height: fit-content; */
   margin: 20px;
   display: flex;
   justify-content: space-between;
@@ -343,7 +343,7 @@ form {
 
 .first {
   width: 100%;
-  height: fit-content;
+  /* height: 16vh; */
   background-color: white;
   padding: 20px;
   border: 1px solid lightgray;
@@ -355,32 +355,37 @@ form {
   margin-bottom: 15px;
 }
 
-.first>div {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
-  justify-items: center;
-  gap: 10px;
-  overflow: auto;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-.first img {
+.swiper-slide {
+  width: 40% !important;
+  /* padding: 50px; */
+  background: #fff;
+  flex-shrink: unset !important;
+}
+
+.swiper-slide a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide a img {
   height: 100px;
   margin-bottom: 8px;
   cursor: pointer;
 }
 
-.first>div>a>p {
-  text-align: center;
+.swiper-slide a p {
+  /* text-align: center; */
   font-size: 14px;
   color: #15222e;
 }
 
-.first>div>div>p:hover {
-  color: rgb(23, 23, 143);
-  text-decoration: underline;
-  cursor: pointer;
-}
 
 .second {
   display: flex;
